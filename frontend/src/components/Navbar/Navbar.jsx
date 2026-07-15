@@ -86,7 +86,7 @@ const Navbar = ({ setShowLogin }) => {
 
   const handleAdminAccess = () => {
     if (adminKey === "SRFOODCOURT26") {
-      window.location.href = "https://campusbitesfoodcourt-rho.vercel.app/";
+      window.location.href = "https://campusbitefoodcourtadmin-opal.vercel.app/";
     } else {
       showNotification(
   "Access Denied",
