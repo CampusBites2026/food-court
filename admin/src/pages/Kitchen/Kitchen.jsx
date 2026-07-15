@@ -19,11 +19,10 @@ const Kitchen = () => {
 
       const online = onlineRes.data.orders || [];
 
-     const pos =
-         posRes.data.orders?.filter(
--          (o) => o.status === "preparing"
-+          (o) => o.status === "CONFIRMED" || o.status === "preparing"
-         ) || [];
+      const pos =
+        posRes.data.orders?.filter(
+          (o) => o.status === "CONFIRMED" || o.status === "preparing"
+        ) || [];
 
       const posFormatted = pos.map((o) => ({
         ...o,
