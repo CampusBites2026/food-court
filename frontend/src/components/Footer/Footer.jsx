@@ -3,6 +3,13 @@ import "./Footer.css";
 import { assets } from "../../assets/assets";
 
 const Footer = () => {
+  const openGmail = () => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=bitescampus27@gmail.com&su=Campus%20Bites%20Support",
+      "_blank"
+    );
+  };
+
   return (
     <div className="footer" id="footer">
 
@@ -25,7 +32,11 @@ const Footer = () => {
 
       <div className="footer-contact">
 
-        <div className="contact-card">
+        <div
+          className="contact-card"
+          onClick={openGmail}
+          style={{ cursor: "pointer" }}
+        >
           📧 bitescampus27@gmail.com
         </div>
 
