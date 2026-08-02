@@ -805,7 +805,7 @@ onClick={() => setOrderType("dine-in")}
 
         <div className="payment-options payment-options-fixed">
           <h2>Select Payment Method</h2>
-{/*
+
           {userType === "faculty" && (
             <>
            <div className="payment-option">
@@ -828,7 +828,7 @@ onClick={() => setOrderType("dine-in")}
               
             </>
           )}
-*/}
+
           <div className="payment-option">
   <p style={{ fontWeight: "600" }}>Pay Online</p>
   <small style={{ color: "#888" }}>
